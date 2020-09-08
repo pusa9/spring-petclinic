@@ -4,7 +4,7 @@ pipeline{
 	
 		stage('SCM - Checkout'){
 			steps{
-				git url: 'https://github.com/javahometech/myweb'
+				git 'https://github.com/pusa9/spring-petclinic.git'
 			
 			}
 		}
