@@ -20,7 +20,7 @@ pipeline{
 					steps{
 					
 						nexusArtifactUploader artifacts: [[artifactId: 'spring-petclinic', classifier: '', 
-                                                                                   file: 'target/petclinic-2.1.0.war', type: 'war']],
+                                                                                   file: 'target/petclinic-2.1.0.jar', type: 'jar']],
                                                         credentialsId: 'nexus3',
                                                         groupId: 'org.springframework.boot',
                                                         nexusUrl: '172.31.2.179:8081', 
